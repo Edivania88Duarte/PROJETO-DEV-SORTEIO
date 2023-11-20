@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,28 +8,36 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&family=Oswald&family=Poppins:wght@400;500;700&family=Roboto:ital,wght@0,100;0,300;0,500;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <title>Random</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&family=Oswald&family=Poppins:wght@400;500;700&family=Roboto:ital,wght@0,100;0,300;0,500;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <title>Sorteador</title>
 </head>
-<header> 
-    <img src="./assets/dadoDevSorteio.png">
-    <h1 class="main-section-divOne-title">DevSorteio</h1>
+<header>
+    <img src="./assets/dadoDevSorteio.png" alt="logo" class="logo">
+
 </header>
+<div>
+    <h1 class="main-section-divOne-title">Sorteador</h1>
 
     <h2>Sortear um número</h2>
+</div>
+
+
+
 <div>
     <input placeholder="entre" class="input-min" type="number">
     <input placeholder="e" class="input-max" type="number">
-      
+
 </div>
 
-    <button onclick="generateNumber()">Sortear</button>
-    <br>
+<button onclick="generateNumber()">Sortear</button>
+<br>
 
-    <h1 id="Resultado"></h1>
+<h1 id="Resultado"></h1>
 
-    
+
 </body>
 <script src="./script.js"></script>
-</html>
 
+</html>

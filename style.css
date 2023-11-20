@@ -7,7 +7,9 @@
 }
 
 body {
-    background: rgb(202, 123, 202);
+    background: url(./assets/fundo-de-quadro-de-festa-de-ano-novo-festivo-de-fitas-azuis-com-espaco-de-design.jpg);
+    background-size: cover; /* Ajusta o tamanho da imagem para cobrir todo o contêiner */
+    background-position: center; /* Centraliza a imagem no contêiner */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -17,80 +19,123 @@ body {
 
 
 img {
-    width: 650px;
-    height: 385x;
-    margin: -120px auto;
- 
+    width: 350px;
+    height: 220x;
+    margin: -150px auto; 
+    padding: auto;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
     
+
+}
+
+@keyframes neon{
+    from{
+        filter: drop-shadow(0 0 0 var(--cor--neon));
+    }
+    to{
+        filter: drop-shadow(0 0 100px var(--cor--neon));
+    }
+
+}
+
+img {
+    animation: neon 3s alternate infinite ease-in-out;
+}
+
+.logo {
+    --cor--neon: #ee85da
 }
 
 .main-section-divOne-title {
     font-style: normal;
     font-weight: 700;
-    font-size: 100px;
-    line-height: 38px;  
+    font-size: 80px;
+    line-height: 40px;  
     color: fuchsia;
     text-align: center;
-    margin-top: 126px;
-    margin-bottom: 26px;
-
-}
-
-h2 {
-    
-    font-style: normal;
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 38px;  
-    color: white;
-    text-align: center;
-    margin-top: 126px;
-    margin-bottom: 26px;
-
-}
-
-input {
-    background: rgba(255, 255, 255, 0.25);
-    border: 1px solid rgb(202, 123, 202);
-    border-radius: 14px;
-    height: 74px;
-    width: 342px;
-    padding-left: 20px;
-    font-weight: 500;
-    font-size: 40px;
-    line-height: 47px;
-    color: #FFFFFF;
-    opacity: 0.7;
-}
-
-.input-min {
-    margin-right: 62px;
-}
-
-button {
-    background: greenyellow;
-    box-shadow: 0px 18px 40px rgba(174, 195, 70, 0.35);
-    border-radius: 10px;
-    width: 342px;
-    height: 72px;
-    color: fuchsia;
-    font-weight: 700;
-    font-size: 36px;
-    margin-top: 80px;
-    cursor: pointer;
+    margin-top: 120px;
+    margin-bottom: 30px;
+   
 }
 
 h1 {
     color: purple;
     font-weight: 700;
     box-shadow: 0px 18px 40px rgba(174, 195, 70, 0.35);
+    text-align: center;
+    justify-content: center;
 }
 
 
-button.hover {
-    opacity: 0.9;
+h2 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;  
+    color: #a53c8e;
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 20px;
 }
 
-button.active {
-    opacity: 0.8;
+input {
+    background: #efbcef;
+    border: 1px solid #92297c;
+    border-radius: 14px;
+    height: 74px;
+    width: 300px;
+    padding-left: 20px;
+    font-weight: 500px;
+    font-size: 40px;
+    line-height: 47px;
+    color: #92297c;
+    opacity: 0.7;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.input-min {
+    margin-right: 50px;
+}
+
+button {
+    background: greenyellow;
+    box-shadow: 0px 18px 40px rgba(174, 195, 70, 0.35);
+    border-radius: 10px;
+    width: 300px;
+    height: 72px;
+    color: #c001c8;
+    font-weight: 700;
+    font-size: 36px;
+    margin-top: 30px;
+    cursor: pointer;
+
+    
+button:hover {
+    opacity: .8s;
+    tra
+
+}
+
+button:active {
+    opacity: .8s;
+}
+
+
+
+
+
+@media screen and (min-width: 768px) {
+    /* Estilos para telas maiores (a partir de 768 pixels de largura) */
+    img {
+        max-width: 200px;
+    }
+
+    .input-min {
+        margin-right: 50px;
+    }
 }
